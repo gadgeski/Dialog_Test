@@ -1,3 +1,10 @@
+//
+//  ContentView.swift
+//  Dialog_Test
+//
+//  Created by Dev Tech on 2025/04/17.
+//
+
 import SwiftUI
 
 struct ContentView: View {

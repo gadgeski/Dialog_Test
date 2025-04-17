@@ -8,7 +8,16 @@ struct ContentView: View {
             isShowingDialog = true
         }) {
             Label("削除ボタン", systemImage: "trash")
-        }.confirmationDialog("注意!", isPresented: $isShowingDialog, action: {
+        }.confirmationDialog("注意!", 
+                            isPresented: $isShowingDialog,
+                            titleVisibility: .visible, 
+                            action: {
+            Button("選択A") {
+                // 処理A
+            }
+            Button("選択B") {
+                // 処理B
+            }
             Button("削除する", role: .destructive) {
                 destructiveAction()
             }
@@ -16,7 +25,7 @@ struct ContentView: View {
                 cancelAction()
             }
         }, message: {
-            Text("削除すると戻せません。")
+            Text("削除すると戻せません。舞元力一おもろい。")
         })
     }
 
